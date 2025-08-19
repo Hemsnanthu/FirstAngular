@@ -1,0 +1,37 @@
+body{
+    margin: auto;
+    padding: 80px;
+}
+
+h1{
+    color: greenyellow;
+    font-size: 24px;
+    /* background-color: black; */
+    box-sizing: content-box;
+  }
+
+  h2{
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  p{
+    color: green;
+  }
+  ul{
+    color: chocolate;
+    background-color: lightgray;
+    font-size: larger;
+  }
+
+  button{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: darkgray;
+    color: black;
+  }
