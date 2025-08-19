@@ -1,6 +1,7 @@
-<h1>Hi! this is Nanthakumar</h1>
-<h2>Software Developer</h2>
-<p>Welcome to my Angular application!</p>
+<body>
+<h1>Welcome to {{name}}'s Profile</h1>
+<h2>{{role}}</h2>
+<p>This is my Angular Project</p>
 <h3>My Skills:</h3>
 <ul>
   <li>Java core</li>
@@ -10,9 +11,17 @@
   <li>Mysql</li>
 </ul>
 
-<button>Resume</button>
-<script>  
-  document.querySelector('button').addEventListener('click', function() {
-    window.location.href = 'https://www.linkedin.com/in/nanthakumarm01/'; // Replace with your resume URL
-  });
-</script>
+<button disabled >Resume</button> <br>
+<button [disabled]="isdisabled">Download Resume</button>
+
+<p>String interpolation</p>
+{{title}}
+<br/>
+{{role}}
+<br/>
+{{age}}
+<br>
+<input type="text" [disabled]="isdisabled" [value]="name" />
+<br/>
+<h1 [class]="isactive? 'active':'inactive'">HEllo guys</h1>
+</body>

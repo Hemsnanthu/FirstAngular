@@ -10,4 +10,14 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'First_Project';
+
+  isvalid:boolean = true;
+
+  name: string = 'Nanthakumar';
+  role: string = 'Software Developer';
+  age: number = 25;
+
+  isdisabled: boolean = false;
+
+  isactive: boolean = true;
 }

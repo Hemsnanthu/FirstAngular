@@ -1,37 +1,45 @@
 body{
     margin: auto;
     padding: 80px;
+    background-color: lightblue;
 }
 
 h1{
-    color: greenyellow;
+  background-color: lightseagreen;
+  padding-block: 20px;
+  margin-block: 20px;
+    color: purple;
     font-size: 24px;
     /* background-color: black; */
+    font-size: 30px;
+    text-align: center;
     box-sizing: content-box;
   }
 
   h2{
     color: red;
+    font-size: 30px;
+    text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   p{
     color: green;
   }
   ul{
-    color: chocolate;
-    background-color: lightgray;
+    color: whitesmoke;
+    background-color: black;
     font-size: larger;
   }
 
-  button{
-    background-color: black;
-    color: white;
+  /* button{
+    background-color: yellow;
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
   }
   button:hover {
-    background-color: darkgray;
-    color: black;
-  }
+    background-color: greenyellow;
+    color: red;
+  } */
