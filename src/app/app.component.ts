@@ -13,11 +13,11 @@ export class AppComponent {
 
   isvalid:boolean = true;
 
+  //string interpolation
   name: string = 'Nanthakumar';
   role: string = 'Software Developer';
   age: number = 25;
 
   isdisabled: boolean = false;
-
   isactive: boolean = true;
 }

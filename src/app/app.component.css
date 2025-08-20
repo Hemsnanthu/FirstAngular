@@ -31,6 +31,14 @@ h1{
     font-size: larger;
   }
 
+  .form{
+    background-color: skyblue;
+    padding: 50px;
+    border-radius: 10px;
+    width: 300px;
+    margin: auto;
+
+  }
   /* button{
     background-color: yellow;
     color: black;
