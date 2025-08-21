@@ -1,4 +1,4 @@
-body{
+#body{
     margin: auto;
     padding: 80px;
     background-color: lightblue;
@@ -39,15 +39,48 @@ h1{
     margin: auto;
 
   }
-  /* button{
-    background-color: yellow;
-    color: black;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  button:hover {
-    background-color: greenyellow;
-    color: red;
-  } */
+
+  .select {
+  width: 250px;
+  margin: 20px auto;
+}
+
+.select select {
+  width: 100%;
+  padding: 10px 15px;
+  border: 2px solid #4a90e2;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* On focus */
+.select select:focus {
+  border-color: #2c6ed5;
+  background-color: #fff;
+  box-shadow: 0 0 6px rgba(74, 144, 226, 0.5);
+}
+
+/* Change arrow */
+.select select {
+  appearance: none;          
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='blue' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: #2c6ed5;
+}
+  

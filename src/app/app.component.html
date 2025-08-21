@@ -1,4 +1,4 @@
-<body>
+<!-- 
 <h1>Welcome to {{name}}'s Profile</h1>
 <h2>{{role}}</h2>
 <p>This is my Angular Project</p>
@@ -33,4 +33,77 @@ Phone<br><input type="text">
  <button>Connect</button>
 </form> 
 </div>
-</body>
+
+<h1>Two way binding</h1>
+<h4>{{name1}}</h4>
+<h4>{{name2}}</h4>
+<br><br>
+
+Name: <input type="text" [(ngModel)] = "name2">
+
+Name: <input type="text" [(ngModel)] = "name1">
+
+<!-- simple if-->
+
+<h3>This is Simple If</h3>
+
+  <h1>Welcome to Angular</h1>
+@if(islogin){
+  Welcome user -_-
+}
+@else {
+  Sorry !! Login failed *_*
+}
+
+<!--ng for with list-->
+<ul>
+    @for (item of city; track $index){
+        <li> {{item}}</li>
+    }
+</ul>
+
+<!--ng for with Div-->
+<div>
+    @for (item of city; track $index){
+        <div> {{item}} </div>
+    }
+</div>
+<!-- ng for with drop down-->
+ <div class="select">
+    <select>
+        @for (item of city; track $index){
+            <option value=""> {{item}} 
+            </option>
+        }
+    </select>
+ </div>
+ <!--ng for with table-->
+ <div class="table">
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">SrNo</th>
+                <th scope="col">Name</th>
+                <th scope="col">Location</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+<table>
+    <thead>
+
+    </thead>
+    <tbody>
+        @for (item of std; track $index)
+{
+    <tr>
+        <td>{{$index+1}}</td> <br>
+    <td>
+        {{item.stdname}}
+    </td> <br>
+    <td>
+        {{item.stdcity}}
+    </td>
+</tr>
+}    </tbody>
+</table>
