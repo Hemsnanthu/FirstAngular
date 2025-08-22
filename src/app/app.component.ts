@@ -2,12 +2,14 @@ import { Component } from '@angular/core';
 // import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 // import { NgForOf } from "../../node_modules/@angular/common/index";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [FormsModule,RouterOutlet ],
+  imports: [FormsModule,RouterOutlet,HeaderComponent,FooterComponent ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -44,6 +46,9 @@ export class AppComponent {
       stdId:1,stdname:"Geet",stdcity:"chennai"
     }
   ]
+clickkk(){
+  alert("Welcome to Angular");
+}
  
 }
 
