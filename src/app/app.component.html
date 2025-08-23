@@ -118,8 +118,21 @@ Name: <input type="text" [(ngModel)] = "name1">
 
 <strong>Name</strong>
 
-<app-header></app-header>
-<app-footer></app-footer>
+<!-- <app-header></app-header>
+<app-footer></app-footer> -->
+
+
+<div [ngClass]="NGClass?'yellow':'green'">This NGClass</div><br>
+<strong>Forms</strong>
+<div class="hll">
+    <form (click)="onclicked()">
+        <p>UserName: <input type="text" name="Username" [(ngModel)]="UserName"></p>
+        <p>Password: <input type="password" name="Password" [(ngModel)]="Password"></p>
+        <p>Confirm password:<input type="password" name="confirmpassword" [(ngModel)]="ConfirmPassword"></p>
+        <button (click)="submit()">Register</button>
+    </form>
+</div>
+
 
 
 

@@ -4,12 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CommonModule, NgClass } from '@angular/common';
 // import { NgForOf } from "../../node_modules/@angular/common/index";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [FormsModule,RouterOutlet,HeaderComponent,FooterComponent ],
+  imports: [FormsModule,CommonModule, RouterOutlet, HeaderComponent, FooterComponent, NgClass],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -49,6 +50,21 @@ export class AppComponent {
 clickkk(){
   alert("Welcome to Angular");
 }
- 
-}
 
+NGClass:boolean=true;
+ 
+
+UserName!:String;
+Password!:String;
+ConfirmPassword!:String;
+onclicked(){
+  console.log({
+  UserName:this.UserName,
+  Password:this.Password,
+  confirmpassword:this.ConfirmPassword
+  });
+}
+submit(){
+alert("Form Submitted Successfully");
+}
+}
